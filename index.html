@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <style>
+        textarea {
+            width: 40%;
+
+        }
+
+        [name="status"] {
+            color: red;
+        }
+
+        [name="options"] button {
+            width: 32px;
+        }
+
+        [name="patterns"] input {
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form method="post" name="cleaner">
+
+        <textarea name="src" rows="50"></textarea>
+        <textarea name="dest" rows="50"></textarea>
+        <p>
+            <button name="clean">Clean</button>
+            <span name="status"></span>
+        </p>
+    </form>
+
+    <form method="post" name="patterns">
+        <table name="options">
+            <thead>
+                <tr>
+                    <th>String/Regex</th>
+                    <th>Replacement</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
